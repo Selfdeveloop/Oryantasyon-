@@ -1,0 +1,27 @@
+package aritmatik.işlemler;
+import java.util.Scanner;
+/**
+ *
+ * @author didoş
+ */
+public class AritmatikIşlemler {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner klavye =new Scanner(System.in);
+        System.out.println("Lütfen iki sayı giriniz:");
+        
+        int x = klavye.nextInt();
+        int y = klavye.nextInt();
+        
+        System.out.println("Toplama:"+ (x+y));
+        System.out.println("Çıkarma:"+ (x-y));
+        System.out.println("Çarpma:" + (x*y));
+        System.out.println("Bölme:"   + (x/y));
+                
+
+    }
+    
+}

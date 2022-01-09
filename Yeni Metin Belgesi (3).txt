@@ -1,0 +1,31 @@
+package faktöriyelhesaplaması;
+
+import java.util.Scanner;
+/**
+ *
+ * @author didoş
+ */
+public class Faktöriyelhesaplaması {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        System.out.println("Lütfen bir sayı giriniz:");
+        Scanner scan= new Scanner (System.in);
+        
+        int sayı =scan.nextInt();
+        int faktöriyel=1;
+        
+        while (sayı>1){
+            
+            faktöriyel=faktöriyel*sayı;
+            System.out.println("Faktöriyel:"+faktöriyel+"sayı"+sayı);
+            
+                sayı--;
+        }
+         System.out.println("faktöriyel:"+ faktöriyel);
+    }
+    
+}

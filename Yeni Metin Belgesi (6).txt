@@ -1,0 +1,32 @@
+package rakamlar.toplamı;
+import java.util.Scanner;
+/**
+ *
+ * @author didoş
+ */
+public class RakamlarToplamı {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner scan =new Scanner (System.in);
+        System.out.println("sayı giriniz");
+        
+        int sayı=scan.nextInt();
+        int toplam=0;
+        
+        do {
+            toplam +=sayı%10;
+            sayı=sayı/10;
+            
+            System.out.println("sayı"+sayı+"toplam"+toplam);
+        
+       
+        }
+        
+        while (sayı>0);
+        System.out.println("toplam"+toplam);
+    
+}
+}

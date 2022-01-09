@@ -1,0 +1,48 @@
+package not.dönüşümü;
+import java.util.Scanner;
+/**
+ *
+ * @author didoş
+ */
+public class NotDönüşümü {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.println("Lütfen öğreninin notunu giriniz(0-100)");
+        Scanner scan =new Scanner(System.in);
+        int not = scan.nextInt();
+        
+        if (not >= 90 && not<=100 ){
+            System.out.println("Tebrikler, AA ile geçtiniz.");
+        }
+        else if ( not >=85 && not <90){
+            System.out.println("Tebrikler, BA ile geçtiniz.");
+
+        }
+        else if (not >=75 && not<85 ){
+            System.out.println("Tebrikler, BB ile geçtiniz.");
+
+        }
+        else if (not >=65 && not<75 ){
+            System.out.println("Tebrikler, CB ile geçtiniz.");
+        }
+        else if (not >=60 && not<65 ){
+            System.out.println("Tebrikler, CC ile geçtiniz.");
+        }
+        else if (not >=55 && not<60 ){
+            System.out.println("Tebrikler, DC ile geçtiniz.");
+        }
+        else if (not >=45 && not<55 ){
+            System.out.println("Tebrikler, DD ile geçtiniz.");
+        }
+        else if (not <45){
+            System.out.println("Tebrikler, FF ile geçtiniz.");
+        }
+        else {
+            System.out.println("Lütfen belirtilen aralıkta geçerli bir not giriniz!");
+        }
+    }
+    
+}

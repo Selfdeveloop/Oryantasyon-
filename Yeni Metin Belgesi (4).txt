@@ -1,0 +1,45 @@
+package günlerr;
+import java.util.Scanner;
+/**
+ *
+ * @author didoş
+ */
+public class Günlerr {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner giriş = new Scanner (System.in);
+        System.out.println("Lütfen gün için bir sayı giriniz (1-7)");
+         int gün = giriş.nextInt();
+         
+         switch (gün){
+             case 1 : System.out.println("Bugün günlerden PAZARTESİ");
+             break;
+             case 2 : System.out.println("Bugün günlerden SALI");
+             break;
+             case 3 : System.out.println("Bugün günlerden ÇARŞAMBA");
+             break;
+             case 4 : System.out.println("Bugün günlerden PERŞEMBE");
+             break;
+             case 5 : System.out.println("Bugün günlerden CUMA");
+             break;
+             case 6 : System.out.println("Bugün günlerden CUMARTESİ");
+             break;
+             case 7 : System.out.println("Bugün günlerden PAZAR");
+             break;
+             default : System.out.println("Lütfen belirtilen aralıkta geçerli bir sayı giriniz...");
+                       System.exit(0);
+             
+
+
+
+             
+
+
+         }
+         
+    }
+    
+}
